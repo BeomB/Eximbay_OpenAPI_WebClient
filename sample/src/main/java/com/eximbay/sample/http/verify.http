@@ -1,0 +1,10 @@
+// 결제 준비 API ENDPOINT
+POST https://api-test.eximbay.com/v1/payments/verify
+//header 영역
+Content-Type: application/json
+Authorization: Basic dGVzdF8xODQ5NzA1QzY0MkMyMTdFMEIyRDo=
+
+//body 영역
+{
+  "data": "baserate=&cur=USD&dm_reject=&cardno1=4111&resdt=20230627205838&cardno4=1111&foreignrate=&mid=1849705C64&amt=1&accesscountry=KR&ref=20230627205615&paymethod=P101&dm_review=&email=Eximbay%40eximbay.com&ver=230&foreignamt=&basecur=&dccrate=&transid=1849705C6420230627000029&dm_decision=&param3=TEST&resmsg=Success.&cardholder=FirstNameLastName&param1=&rescode=0000&param2=&authcode=949620&fgkey=DAF8A37FE01E14AC0F05E2790C8E9F8B40FC5BA98A5ACBA25E51EB3270E2BF75&txntype=PAYMENT&foreigncur=&payto=EXIMBAY.COM&baseamt="
+}

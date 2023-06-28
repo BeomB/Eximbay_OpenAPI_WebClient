@@ -1,0 +1,28 @@
+// 결제 준비 API ENDPOINT
+POST https://api-test.eximbay.com/v1/payments/ready
+//header 영역
+Content-Type: application/json
+Authorization: Basic dGVzdF8xODQ5NzA1QzY0MkMyMTdFMEIyRDo=
+
+//body 영역
+{
+  "payment": {
+    "transaction_type": "PAYMENT",
+    "order_id": "Sample_orderId_1",
+    "currency": "USD",
+    "amount": "1",
+    "lang": "EN",
+    "payment_method": "P000"
+  },
+  "merchant": {
+    "mid": "1849705C64"
+  },
+  "url": {
+    "return_url": "https://eximbay.samplesource.com/returnurl",
+    "status_url": "https://eximbay.samplesource.com/statusurl"
+  },
+  "buyer": {
+    "name": "Eximbay",
+    "email": "Eximbay@test.com"
+  }
+}
