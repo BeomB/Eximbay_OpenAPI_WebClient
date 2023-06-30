@@ -23,5 +23,5 @@ Authorization: Basic dGVzdF8xODQ5NzA1QzY0MkMyMTdFMEIyRDo=
 }
 
 > {%
-client.global.set("cancel_transaction_id","1849705C6420230627000029");
+client.global.set("cancel_transaction_id","1849705C6420230627000029");      //변수 설정
 %}
