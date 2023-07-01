@@ -16,4 +16,14 @@ public class SampleController {
     public void ready() {
         sampleService.ready();
     }
+
+    @GetMapping("/cancel")
+    public void cancel() {
+        sampleService.cancel();
+    }
+
+    @GetMapping("/verify")
+    public void verify() {
+        sampleService.verify();
+    }
 }
