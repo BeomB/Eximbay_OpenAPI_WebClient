@@ -46,14 +46,11 @@ public class SampleService {
         String payload = "{\"data\":\"cur=KRW&dm_reject=&ver=230&mid=2C233AB5EB&amt=4650&dm_decision=&eci=02&param3=OPENAPI&resmsg=Success.&param1=SP230419YWYIZTYYVR&rescode=0000&param2=40476937&cavv=kJkBAkV5kwAAAABkhAEgdAAAAAA=&ref=SP230419YWYIZTYYVR&xid=9c7d9a6b-c0ca-4076-acac-0f03554799a8&fgkey=D45C82E34CF149EE48927B42F60EC0A73B8A3E24BFF8FD5F1BF8530FEC6D13E8&dm_review=&txntype=PAYER_AUTH&payerauthid=2023041913144025AFB7DFDA&email=robin9202@naver.com\"}";
 
         WebClient webClient = WebClient.create();
-        
+
         webClient.post().uri(API_ENDPOINT).header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE).header(HttpHeaders.AUTHORIZATION, AUTHORIZATION_HEADER).body(BodyInserters.fromValue(payload)).retrieve().bodyToMono(String.class).subscribe(response -> {
             System.out.println("Response: " + response);
-            // Process the response as needed
         });
     }
 
+
 }
-
-
-

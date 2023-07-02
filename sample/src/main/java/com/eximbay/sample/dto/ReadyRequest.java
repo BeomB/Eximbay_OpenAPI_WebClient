@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Setter
+
+
 @Getter
 @NoArgsConstructor
 public class ReadyRequest {
@@ -24,7 +24,7 @@ public class ReadyRequest {
         this.buyer = buyer;
     }
 
-    @Setter
+    
     @Getter
     @NoArgsConstructor
     public static class Payment {
@@ -51,7 +51,7 @@ public class ReadyRequest {
         }
     }
 
-    @Setter
+    
     @Getter
     @NoArgsConstructor
     public static class Merchant {
@@ -63,7 +63,7 @@ public class ReadyRequest {
         }
     }
 
-    @Setter
+    
     @Getter
     @NoArgsConstructor
     public static class Url {
@@ -79,7 +79,7 @@ public class ReadyRequest {
         }
     }
 
-    @Setter
+    
     @Getter
     @NoArgsConstructor
     public static class Buyer {
