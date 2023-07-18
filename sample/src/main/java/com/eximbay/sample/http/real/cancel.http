@@ -1,0 +1,32 @@
+POST https://api.eximbay.com/v1/payments/{{cancel_transaction_id}}/cancel
+//header 영역
+Content-Type: application/json
+Authorization:
+
+
+//body 영역
+{
+  "mid": "447DD1C4D1",
+  "payment": {
+    "amount": "500",
+    "balance": "500",
+    "currency": "KRW",
+    "lang": "KR",
+    "order_id": "20230718152338"
+  },
+  "refund": {
+    "reason": "테스트 거래",
+    "refund_type": "F",
+    "refund_amount": "500",
+    "refund_id": "KOBE_REFUND23"
+  },
+  "refund_account" : {
+    "user_name": "이범기",
+    "bank_code": "004",
+    "account_number": "94160200047393"
+  }
+}
+
+> {%
+client.global.set("cancel_transaction_id","447DD1C4D120230718000003");      //변수 설정
+%}

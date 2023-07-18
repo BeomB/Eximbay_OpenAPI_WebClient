@@ -5,11 +5,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-
-
 @Getter
 @NoArgsConstructor
-public class ReadyRequest {
+public class ReadyRequest {          // 준비 API Request DTO 생성
 
     private Payment payment;
     private Merchant merchant;
@@ -24,7 +22,7 @@ public class ReadyRequest {
         this.buyer = buyer;
     }
 
-    
+
     @Getter
     @NoArgsConstructor
     public static class Payment {
@@ -51,7 +49,7 @@ public class ReadyRequest {
         }
     }
 
-    
+
     @Getter
     @NoArgsConstructor
     public static class Merchant {
@@ -63,7 +61,7 @@ public class ReadyRequest {
         }
     }
 
-    
+
     @Getter
     @NoArgsConstructor
     public static class Url {
@@ -79,7 +77,7 @@ public class ReadyRequest {
         }
     }
 
-    
+
     @Getter
     @NoArgsConstructor
     public static class Buyer {

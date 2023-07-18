@@ -1,0 +1,22 @@
+// 결제 준비 API ENDPOINT
+POST https://api.eximbay.com/v1/payments/retrieve
+//header 영역
+Content-Type: application/json
+Authorization:
+
+//body 영역
+{
+  "mid" : "3272C47238",
+  "key_field" : "transaction_id",
+  "payment" : {
+    "order_id" : "16885319762913",
+    "currency" : "USD",
+    "amount" : "17.75",
+    "transaction_id" : "3272C4723820230705000206",
+    "lang" : "EN"
+  }
+}
+
+
+
+

@@ -5,9 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @NoArgsConstructor
-public class CancelRequest {
+public class CancelRequest {          // 취소 API Request DTO 생성
+
 
     private String mid;
     private Payment payment;

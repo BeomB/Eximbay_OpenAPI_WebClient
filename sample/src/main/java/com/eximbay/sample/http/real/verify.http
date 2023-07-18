@@ -1,0 +1,10 @@
+// 결제 준비 API ENDPOINT
+POST https://api.eximbay.com/v1/payments/verify
+//header 영역
+Content-Type: application/json
+Authorization:
+
+//body 영역
+{
+  "data" : "dm_reject=&ver=230&amount=500&mid=50B8169531&dm_decision=&eci=05&transaction_type=PAYER_AUTH&param3=OPENAPI&resmsg=Success.&param1=&rescode=0000&param2=&cavv=AJkCBBNHBAAAAAEyNEEVdAAAAAA%3D&xid=45df4aaa-2b37-4042-bd10-c70e16aecab8&fgkey=AD6C073587FCBF5A5EE7F5B1145B298BDB2D9CCB0490737393369244CAFB6DBC&dm_review=&currency=KRW&payer_auth_id=20230425091903343D9F5509&order_id=SAMUEL_TEST_0425_04&email=samuel%40eximbay.com"
+}

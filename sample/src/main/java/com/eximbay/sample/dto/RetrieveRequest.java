@@ -3,7 +3,10 @@ package com.eximbay.sample.dto;
 import lombok.Getter;
 
 
-public class RetrieveRequest {
+
+@Getter
+@NoArgsConstructor
+public class RetrieveRequest {         // 조회 API Request DTO 생성
 
     private String mid;
     private String keyField;
